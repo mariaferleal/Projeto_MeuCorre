@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Meu Corre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-meu-corre.png" alt="Logo Meu Corre" style="height: 50px;"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="galeria.html">Vitrine</a></li>
+                    <li><a href="capacitacao.html">Capacitação</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Acesse sua Conta</h1>
+                <p style="text-align: center; margin-bottom: 30px;">Bem-vindo de volta! Faça login para continuar.</p>
+
+                <div class="form-container">
+                    <form action="index.html" method="GET"> <!-- Redireciona para index.html -->
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-size: 0.9em;">
+                            <label for="rememberMe" style="display: inline-flex; align-items: center; margin-bottom: 0; font-weight: normal;">
+                                <input type="checkbox" id="rememberMe" name="rememberMe" style="width: auto; margin-right: 5px;"> Lembrar-me
+                            </label>
+                            <a href="#" style="font-size: 0.9em;">Esqueceu sua senha?</a>
+                        </div>
+
+                        <button type="submit" class="btn">Entrar</button>
+                    </form>
+                    <p style="text-align: center; margin-top: 20px;">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Corre. Todos os direitos reservados.</p>
+            <p>Promovendo o ODS 8: Trabalho Decente e Crescimento Econômico.</p>
+            <p>
+                <a href="https://mariaferleal.github.io/CV_P            <p>
+                <a href="https://mariaferleal.github.io/CV_PWF/" target="_blank">Currículo - Mafer Leal (PDF)</a>
+            </p>/footer>
+</body>
+</html>

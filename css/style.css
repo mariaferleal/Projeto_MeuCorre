@@ -1,0 +1,493 @@
+body, h1, h2, h3, p, ul, li, a, form, button, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #212529; /* Texto Principal Atualizado */
+}
+
+body {
+    background-color: #FFFFFF;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #FF033E; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+:root {
+    --cor-principal-destaque: #FF033E; 
+    --cor-apoio-verde-suave: #D1E7DD;
+    --cor-apoio-azul-acinzentado: #AEC6CF;
+    --cor-apoio-bege-creme: #F5F5DC;
+    --cor-apoio-lilas-suave: #E6E0F8;
+    --cor-texto-principal: #212529;
+    --cor-texto-secundario: #495057;
+    --cor-fundo-principal: #FFFFFF;
+    --cor-fundo-secao-alternativa: #F8F9FA;
+    --cor-bordas-suaves: #CED4DA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'poppins', sans-serif;
+    color: var(--cor-texto-principal);
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8em;
+    color: var(--cor-principal-destaque);
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var( --cor-principal-destaque);
+
+}
+
+h3 {
+    font-size: 1.6em;
+    color: var(--cor-texto-secundario);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-fundo-principal);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cor-bordas-suaves);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--cor-principal-destaque);
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--cor-texto-secundario);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--cor-principal-destaque);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-texto-principal);
+    color: var(--cor-fundo-principal);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    color: var(--cor-fundo-principal);
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--cor-apoio-lilas-suave);
+    font-weight: bold;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background-color: var(--cor-principal-destaque);
+    color: var(--cor-fundo-principal) !important; /* Garante cor do texto do botão */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px; /* Botões mais arredondados */
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none !important; /* Remove sublinhado de links com classe btn */
+}
+
+.btn:hover {
+    background-color: #E00030; /* Um tom mais escuro do principal */
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--cor-principal-destaque) !important;
+    border: 2px solid var(--cor-principal-destaque);
+}
+
+.btn-secundario:hover {
+    background-color: var(--cor-principal-destaque);
+    color: var(--cor-fundo-principal) !important;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--cor-texto-secundario);
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-bordas-suaves);
+    border-radius: 8px; 
+    font-size: 1em;
+    background-color: var(--cor-fundo-principal);
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--cor-fundo-secao-alternativa);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Seções Genéricas */
+.section {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden; 
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--cor-apoio-azul-acinzentado);
+    color: var(--cor-texto-principal);
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    bottom: -50px; 
+    left: 0;
+    width: 100%;
+    height: 150px; 
+    background-color: var(--cor-fundo-principal);
+    clip-path: ellipse(70% 100% at 50% 100%); }
+
+.hero-content {
+    position: relative; 
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: var(--cor-fundo-principal);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.hero-content .subtitle {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: var(--cor-fundo-principal);
+    opacity: 0.9;
+}
+
+.hero-image-container {
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hero-image-container img {
+    border-radius: 15px;
+}
+
+/* Seção ODS 8 */
+.ods8-section {
+    background-color: var(--cor-apoio-verde-suave);
+    padding: 80px 0;
+}
+
+.ods8-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.ods8-text {
+    flex: 1;
+}
+
+.ods8-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ods8-image {
+    flex-basis: 300px;
+    text-align: center;
+}
+
+.ods8-image img {
+    max-width: 200px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+/* Seção Sobre o Projeto */
+.about-section {
+    background-color: var(--cor-fundo-principal);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex-basis: 45%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    border-radius: 15px;
+}
+
+/* Seção Benefícios */
+.benefits-section {
+    background-color: var(--cor-apoio-lilas-suave);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    background-color: var(--cor-fundo-principal);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.benefit-item img.icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit-item h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--cor-principal-destaque);
+}
+
+/* Seção Como Participar */
+.join-us-section {
+    background-color: var(--cor-apoio-bege-creme);
+    text-align: center;
+}
+
+.join-us-section h2 {
+    margin-bottom: 20px;
+}
+
+.join-us-section p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-size: 1.1em;
+}
+
+/* Galeria */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 1px solid var(--cor-bordas-suaves);
+    border-radius: 10px; /* Bordas mais arredondadas */
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor-fundo-secao-alternativa);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    display: block;         
+    margin: 0 auto;        
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.gallery-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    color: var(--cor-principal-destaque);
+}
+
+.gallery-item p {
+    font-size: 0.95em;
+    color: var(--cor-texto-secundario);
+}
+
+/* Capacitação*/
+.tip-item {
+    background-color: var(--cor-fundo-secao-alternativa);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--cor-apoio-verde-suave);
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.tip-item h3 {
+    margin-top: 0;
+    color: var(--cor-principal-destaque);
+}
+
+
+.hero-title-red {
+    color: var(--cor-principal-destaque) !important; /* Garante que a cor seja aplicada sobrepondo outros estilos se necessário */
+}
+
+
+.capacitacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Mantém o layout responsivo */
+    gap: 30px; /* Espaçamento entre os cards */
+    margin-top: 30px;
+}
+
+.capacitacao-card {
+    background-color: var(--cor-fundo-secao-alternativa); /* Usar uma cor de fundo consistente */
+    border-radius: 15px; /* Bordas arredondadas conforme solicitado */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Sombra suave para destaque */
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse as bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    transition: none; /* Garante que não haja transições/animações */
+}
+
+.capacitacao-card:hover {
+    transform: none; /* Garante que não haja transformações no hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Mantém a mesma sombra no hover */
+}
+
+.capacitacao-card-image img {
+    width: 100%;
+    height: 200px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.capacitacao-card-content {
+    padding: 20px;
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o botão para baixo */
+}
+
+.capacitacao-card-content h3 {
+    font-size: 1.4em;
+    color: var(--cor-principal-destaque); /* Cor do título do card */
+    margin-bottom: 10px;
+}
+
+.capacitacao-card-content p {
+    font-size: 0.95em;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.capacitacao-card-content .btn {
+    align-self: flex-start; /* Alinha o botão à esquerda no card */
+}

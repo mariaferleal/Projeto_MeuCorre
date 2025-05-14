@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e Cadastro - Meu Corre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-meu-corre.png" alt="Logo Meu Corre" style="height: 50px;"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="galeria.html">Vitrine</a></li>
+                    <li><a href="capacitacao.html">Capacitação</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Fale Conosco e Cadastre seu Negócio</h1>
+                <p style="text-align: center; margin-bottom: 30px;">Tem alguma dúvida, sugestão ou quer cadastrar seu empreendimento em nossa vitrine? Preencha o formulário abaixo!</p>
+
+                <div class="form-container">
+                    <form action="#" method="POST"> <!-- Usar Formspree ou similar no action futuramente -->
+                        <label for="nomeCompleto">Nome Completo:</label>
+                        <input type="text" id="nomeCompleto" name="nomeCompleto" required>
+
+                        <label for="nomeNegocio">Nome do Negócio:</label>
+                        <input type="text" id="nomeNegocio" name="nomeNegocio" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+
+                        <label for="tipoNegocio">Tipo de Negócio:</label>
+                        <input type="text" id="tipoNegocio" name="tipoNegocio" placeholder="Ex: Artesanato, Alimentação, Serviços" required>
+
+                        <label for="descricaoNegocio">Descrição do Negócio:</label>
+                        <textarea id="descricaoNegocio" name="descricaoNegocio" rows="4" placeholder="Conte-nos um pouco sobre o que você faz" required></textarea>
+
+                        <label for="bairroCidade">Bairro ou Cidade (Opcional):</label>
+                        <input type="text" id="bairroCidade" name="bairroCidade">
+
+                        <label for="redesSociais">Link para Redes Sociais ou Portfólio (Opcional):</label>
+                        <input type="text" id="redesSociais" name="redesSociais" placeholder="Ex: instagram.com/seunegocio">
+                        
+                        <p style="font-size:0.8em; margin-bottom:15px;">Ao enviar, você concorda com a divulgação das informações do seu negócio em nossa plataforma.</p>
+
+                        <button type="submit" class="btn">Enviar Cadastro</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Corre. Todos os direitos reservados.</p>
+            <p>Promovendo o ODS 8: Trabalho Decente e Crescimento Econômico.</p>
+            <p>
+                <a href="https://mariaferleal.github.io/CV_PWF/" target="_blank">Currículo - Mafer Leal (PDF)</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
