@@ -1,7 +1,5 @@
 # 💼 Meu Corre!  
-[Logo Meu Corre](https://github.com/user-attachments/assets/6b64748d-9d73-4663-97b6-201f6890020b)
-
-
+![Logo do Meu Corre](./Logo%20Meu%20Corre.png)
 Uma plataforma simples e acessível para dar visibilidade a pequenos comércios locais, conectando empreendedores com sua comunidade e fomentando a economia local.
 
 [🔗 Acesse o site aqui](https://mariaferleal.github.io/Projeto_MeuCorre/)
