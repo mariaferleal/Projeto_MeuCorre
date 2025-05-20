@@ -1,6 +1,6 @@
 # 💼 Meu Corre!  
 
-![Design sem nome](https://github.com/user-attachments/assets/f48cc5a2-0364-455a-b14c-1364b19bb4a3)
+![Design sem nome (1)](https://github.com/user-attachments/assets/9d2f4815-48d8-4fa0-8f49-7f08b6ecd888)
 
 
 Uma plataforma simples e acessível para dar visibilidade a pequenos comércios locais, conectando empreendedores com sua comunidade e fomentando a economia local.
