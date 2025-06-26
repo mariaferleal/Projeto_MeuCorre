@@ -480,3 +480,70 @@ form textarea {
 .capacitacao-card-content .btn {
     align-self: flex-start;
 }
+
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container form .btn {
+    width: auto;
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    flex-grow: 1;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.user-list-item {
+    background-color: var(--cor-fundo-principal);
+    border: 1px solid var(--cor-bordas-suaves);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.user-list-item span {
+    flex-grow: 1;
+    color: var(--cor-texto-principal);
+}
+
+.user-list-item .delete-user-btn {
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.user-list-item .delete-user-btn:hover {
+    background-color: #c82333;
+}
+
+#clear-all-users {
+    margin-top: 20px;
+    width: auto;
+}
+
