@@ -31,6 +31,9 @@ O projeto foi desenvolvido com foco na valorização da economia local, estimula
 - **HTML5**: Estrutura do conteúdo
 - **CSS3**: Estilização e responsividade
 - **GitHub Pages**: Hospedagem do projeto
+- JavaScript: Funcionalidades dinâmicas e armazenamento local  
+
+
 
 ---
 
@@ -39,6 +42,14 @@ O projeto foi desenvolvido com foco na valorização da economia local, estimula
 - Listagem de comércios locais com imagem, nome e descrição
 - Interface simples e responsiva
 - Navegação amigável
+- Página “Admin” com painel de gerenciamento de usuários, onde é possível:
+  - Cadastrar novos usuários com nome e e-mail  
+  - Exibir uma lista dinâmica dos usuários com data de cadastro  
+  - Armazenar e recuperar dados usando Local Storage  
+  - Pesquisar usuários na lista  
+  - Limpar campos do formulário  
+  - Excluir um item específico da lista  
+  - Excluir todos os itens da lista
 
 
 
